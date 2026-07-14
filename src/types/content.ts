@@ -27,6 +27,7 @@ export type Value = {
 export type LeadershipProfile = {
   name: string;
   role: string;
+  image: string;
   biography: string[];
 };
 

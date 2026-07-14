@@ -160,6 +160,7 @@ export const leadershipProfiles: LeadershipProfile[] = [
   {
     name: "H.E. Mohamed Ali Al Shamsi",
     role: "Chairman",
+    image: "/leaders/chairman.jpeg",
     biography: [
       "H.E. Mohamed Ali Al Shamsi is an accomplished Emirati diplomat and senior public-sector leader with extensive experience in foreign affairs, international cooperation, and crisis management. He holds a Bachelor's Degree in Military Sciences and a Diploma in Crisis and Emergency Management.",
       "Throughout his career, he served in several senior positions at the Ministry of Foreign Affairs, including Counsellor at the UAE Permanent Mission to the International Atomic Energy Agency, Deputy Director of International Cooperation, and Director of African Affairs.",
@@ -169,6 +170,7 @@ export const leadershipProfiles: LeadershipProfile[] = [
   {
     name: "Eng. Nazim S. Nemer",
     role: "Vice Chairman",
+    image: "/leaders/vice_chairman.jpeg",
     biography: [
       "Eng. Nazim S. Nemer is a senior professional with over 33 years of experience within ADNOC, where he held key roles across maintenance planning, production operations, IT support, information systems, quality management, project management, and cost optimization.",
       "Throughout his career, he contributed to the development and implementation of operational and technology-driven solutions, including exploration and development support, production operation systems, and business process improvement initiatives.",
@@ -178,6 +180,7 @@ export const leadershipProfiles: LeadershipProfile[] = [
   {
     name: "Walid Abdelaziz Elmowafi, PhD",
     role: "Chief Executive Officer",
+    image: "/leaders/CEO.jpeg",
     biography: [
       "Dr. Walid Elmowafi is an experienced Nuclear Safeguards Professional, Senior Regulatory Specialist, and International Expert with over 30 years of experience in the nuclear and radiological sectors. He holds a Ph.D. in Nuclear Safeguards and has a strong background in Radiometric Physics.",
       "Throughout his career, he has contributed to the development of nuclear and radiation regulatory frameworks, emergency preparedness standards, and national emergency response planning.",

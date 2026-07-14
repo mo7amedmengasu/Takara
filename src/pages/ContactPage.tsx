@@ -1,7 +1,5 @@
-import { Mail, MapPin, Send } from "lucide-react";
-import { Button } from "../components/common/Button";
+import { CheckCircle2, Mail, MapPin } from "lucide-react";
 import { PageHero } from "../components/common/PageHero";
-import { ContactForm } from "../components/forms/ContactForm";
 import { company } from "../data/site";
 import { contact } from "../data/content";
 
@@ -14,7 +12,7 @@ export function ContactPage() {
           <aside className="contact-panel">
             <p className="eyebrow">Contact Details</p>
             <h2>{company.name}</h2>
-            <a href={`mailto:${company.email}`}>
+            <a className="contact-email" href={`mailto:${company.email}`}>
               <Mail size={18} aria-hidden="true" />
               {company.email}
             </a>
@@ -22,24 +20,23 @@ export function ContactPage() {
               <MapPin size={18} aria-hidden="true" />
               {company.location}
             </p>
-            <div className="quick-actions">
-              {contact.actions.map((action) => (
-                <Button key={action} href="/contact" variant="secondary">
-                  {action}
-                </Button>
-              ))}
-            </div>
           </aside>
-          <div>
-            <div className="dev-warning">
-              <Send size={18} aria-hidden="true" />
-              <p>
-                The form is ready for a live endpoint through VITE_CONTACT_ENDPOINT and provides a mailto fallback when
-                no endpoint is configured.
-              </p>
-            </div>
-            <ContactForm />
-          </div>
+          <section className="contact-inquiry-panel" aria-labelledby="contact-inquiries-title">
+            <p className="eyebrow">Send Us an Email About</p>
+            <h2 id="contact-inquiries-title">How we can help</h2>
+            <p>
+              Please email Takara Haya Medical L.L.C. with a clear subject line and any relevant product, partnership,
+              or organization details. The team can review inquiries related to:
+            </p>
+            <ul className="contact-inquiry-list">
+              {contact.inquiryOptions.map((option) => (
+                <li key={option}>
+                  <CheckCircle2 size={17} aria-hidden="true" />
+                  <span>{option}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
         </div>
       </section>
     </>

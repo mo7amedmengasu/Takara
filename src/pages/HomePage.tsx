@@ -22,8 +22,6 @@ import {
   services,
   supportedAudiences,
 } from "../data/content";
-import { company } from "../data/site";
-import { initialsFor } from "../utils/routes";
 
 const audienceIcons = [Hospital, Building2, Stethoscope, Pill, Users, Hospital, Factory, ShieldCheck, Users];
 
@@ -40,20 +38,24 @@ export function HomePage() {
           <span />
         </div>
         <div className="container hero-inner">
-          <div className="hero-logo-card">
-            <img src={company.logo} alt="Takara Haya Medical L.L.C. official logo" width="300" height="200" />
+          <div className="hero-copy">
+            <p className="eyebrow">Abu Dhabi, United Arab Emirates</p>
+            <h1>{homeHero.heading}</h1>
+            <p>{homeHero.subheading}</p>
+            <div className="hero-actions">
+              <Button href="/medical-solutions">Explore Medical Solutions</Button>
+              <Button href="/partners" variant="secondary">
+                Partner With Us
+              </Button>
+              <Button href="/contact" variant="dark">
+                Contact Us
+              </Button>
+            </div>
           </div>
-          <p className="eyebrow">Abu Dhabi, United Arab Emirates</p>
-          <h1>{homeHero.heading}</h1>
-          <p>{homeHero.subheading}</p>
-          <div className="hero-actions">
-            <Button href="/medical-solutions">Explore Medical Solutions</Button>
-            <Button href="/partners" variant="secondary">
-              Partner With Us
-            </Button>
-            <Button href="/contact" variant="dark">
-              Contact Us
-            </Button>
+          <div className="hero-brand-composition" aria-hidden="true">
+            <div className="hero-seal">
+              <img src="/brand/takara-haya-logo-circle.png" alt="" width="920" height="920" />
+            </div>
           </div>
         </div>
       </section>
@@ -138,7 +140,7 @@ export function HomePage() {
 
       <section className="section global-section">
         <div className="container global-grid">
-          <ScrollReveal>
+          <ScrollReveal className="global-copy-panel">
             <SectionHeader
               eyebrow="International Partners Preview"
               title="Introducing selected international manufacturers to UAE and GCC healthcare markets."
@@ -147,9 +149,14 @@ export function HomePage() {
             <Button href="/partners">Become a Partner</Button>
           </ScrollReveal>
           <div className="global-map" aria-label="Partnership regions: Japan, Europe, United States, UAE and GCC">
-            {["Japan", "Europe", "United States", "UAE and GCC"].map((region) => (
-              <span key={region}>{region}</span>
-            ))}
+            <img className="earth-visual" src="/Wallpapers/Earth.png" alt="" width="512" height="512" aria-hidden="true" />
+            <div className="global-hub">
+              <strong>UAE and GCC</strong>
+              <small>Market gateway</small>
+            </div>
+            <span className="region-tag region-europe">Europe</span>
+            <span className="region-tag region-japan">Japan</span>
+            <span className="region-tag region-us">United States</span>
           </div>
         </div>
       </section>
@@ -160,9 +167,13 @@ export function HomePage() {
           <div className="card-grid three">
             {leadershipProfiles.map((profile) => (
               <article className="leader-preview" key={profile.name}>
-                <div className="profile-placeholder" aria-label={`Placeholder for ${profile.name} official portrait`}>
-                  {initialsFor(profile.name)}
-                </div>
+                <img
+                  className="profile-photo"
+                  src={profile.image}
+                  alt={`${profile.name}, ${profile.role}`}
+                  width="184"
+                  height="184"
+                />
                 <h3>{profile.name}</h3>
                 <p>{profile.role}</p>
               </article>

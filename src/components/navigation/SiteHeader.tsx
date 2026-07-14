@@ -1,21 +1,19 @@
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
-import { company } from "../../data/site";
+import { Link, NavLink } from "react-router-dom";
 import { navigationItems } from "../../data/navigation";
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
-  const { pathname } = useLocation();
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24 || pathname !== "/");
+    const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [pathname]);
+  }, []);
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -60,7 +58,7 @@ export function SiteHeader() {
         </a>
         <div className="container header-inner">
           <Link className="brand-link" to="/" aria-label="Takara Haya Medical home">
-            <img src={company.logo} alt="Takara Haya Medical L.L.C." width="90" height="60" />
+            <img src="/brand/takara-haya-logo-circle.png" alt="Takara Haya Medical L.L.C." width="90" height="90" />
             <span>
               <strong>Takara Haya</strong>
               <small>Medical L.L.C.</small>

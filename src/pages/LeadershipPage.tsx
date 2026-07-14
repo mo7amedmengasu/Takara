@@ -2,7 +2,6 @@ import { PageHero } from "../components/common/PageHero";
 import { SectionHeader } from "../components/common/SectionHeader";
 import { ScrollReveal } from "../components/motion/ScrollReveal";
 import { chairmanMessage, leadershipIntro, leadershipProfiles } from "../data/content";
-import { initialsFor } from "../utils/routes";
 
 export function LeadershipPage() {
   return (
@@ -11,9 +10,13 @@ export function LeadershipPage() {
       <section className="section">
         <div className="container letter-layout">
           <aside className="letter-panel">
-            <div className="profile-placeholder large" aria-label="Placeholder for H.E. Mohamed Ali Al Shamsi official portrait">
-              {initialsFor("H.E. Mohamed Ali Al Shamsi")}
-            </div>
+            <img
+              className="chairman-words-image"
+              src="/chairman_words.jpeg"
+              alt="Chairman leadership artwork"
+              width="1280"
+              height="853"
+            />
             <h2>Message from the Chairman</h2>
             <p>H.E. Mohamed Ali Al Shamsi</p>
             <p>Chairman, Takara Haya Medical L.L.C.</p>
@@ -36,9 +39,13 @@ export function LeadershipPage() {
           <div className="profile-stack">
             {leadershipProfiles.map((profile) => (
               <article key={profile.name} className="profile-section">
-                <div className="profile-placeholder" aria-label={`Placeholder for ${profile.name} official portrait`}>
-                  {initialsFor(profile.name)}
-                </div>
+                <img
+                  className="profile-photo"
+                  src={profile.image}
+                  alt={`${profile.name}, ${profile.role}`}
+                  width="280"
+                  height="280"
+                />
                 <div>
                   <p className="eyebrow">{profile.role}</p>
                   <h3>{profile.name}</h3>
