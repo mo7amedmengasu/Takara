@@ -1263,6 +1263,38 @@ p {
   .closing-cta {
     background-attachment: scroll, scroll, scroll, scroll;
   }
+
+  .home-hero {
+    isolation: isolate;
+  }
+
+  .home-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      linear-gradient(90deg, rgba(247, 241, 232, 0.72) 0%, rgba(247, 241, 232, 0.38) 46%, rgba(247, 241, 232, 0.06) 100%),
+      linear-gradient(180deg, rgba(255, 253, 249, 0.2), rgba(247, 241, 232, 0.38)),
+      url("/Wallpapers/abu-dhabi-fountains.webp") center top / cover no-repeat;
+  }
+
+  .home-hero > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .home-hero .hero-texture,
+  .home-hero .hero-arc,
+  .home-hero .hero-waves,
+  .home-hero .hero-blossoms {
+    position: absolute;
+  }
+
+  .home-hero .hero-inner {
+    z-index: 2;
+  }
 }
 
 .statement-pair,
