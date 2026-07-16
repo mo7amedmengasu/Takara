@@ -36,7 +36,7 @@ export function AboutPage() {
         </div>
       </section>
       <section className="section">
-        <div className="container narrow">
+        <div className="container narrow translucent-text-panel">
           <SectionHeader eyebrow="Our Purpose" title="Connecting global medical innovation with the UAE healthcare market." />
           <p className="lead-text">{about.purpose}</p>
         </div>

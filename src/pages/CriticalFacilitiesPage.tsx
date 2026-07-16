@@ -1,4 +1,4 @@
-import { AlertTriangle, BriefcaseMedical, HeartPulse, ShieldCheck } from "lucide-react";
+import { BriefcaseMedical, HeartPulse, ShieldCheck } from "lucide-react";
 import { Card } from "../components/common/Card";
 import { PageHero } from "../components/common/PageHero";
 import { SectionHeader } from "../components/common/SectionHeader";
@@ -8,14 +8,6 @@ export function CriticalFacilitiesPage() {
   return (
     <>
       <PageHero title="Critical Facilities Medical Support" subtitle={criticalFacilities.pageSubheading} />
-      <section className="section">
-        <div className="container">
-          <div className="scope-notice" role="note">
-            <AlertTriangle size={22} aria-hidden="true" />
-            <p>{criticalFacilities.positioning}</p>
-          </div>
-        </div>
-      </section>
       <section className="section section-warm">
         <div className="container editorial-grid">
           <div className="statement-block">
@@ -33,8 +25,8 @@ export function CriticalFacilitiesPage() {
         </div>
       </section>
       <section className="section">
-        <div className="container dual-list-grid">
-          <div>
+        <div className="container dual-list-grid critical-list-grid">
+          <div className="critical-list-panel">
             <SectionHeader eyebrow="Solutions Provided" title="Medical products and healthcare consumables only." />
             <ul className="check-list">
               {criticalFacilities.solutions.map((item) => (
@@ -42,7 +34,7 @@ export function CriticalFacilitiesPage() {
               ))}
             </ul>
           </div>
-          <div>
+          <div className="critical-list-panel">
             <SectionHeader eyebrow="Target Facilities" title="Facilities with onsite medical needs." />
             <ul className="check-list">
               {criticalFacilities.targets.map((item) => (

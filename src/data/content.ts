@@ -33,7 +33,7 @@ import type {
 export const homeHero = {
   heading: "Takara Haya Medical L.L.C.",
   subheading:
-    "A newly established UAE-based medical company connecting trusted international healthcare manufacturers with hospitals, clinics, pharmacies, healthcare providers, and critical facilities across the UAE and GCC.",
+    "Takara Haya Medical L.L.C. is a UAE-based medical company delivering advanced medical equipment, diagnostic imaging systems, nuclear medicine technologies, healthcare consumables, infection control solutions, PPE, and hygiene products through trusted international partnerships, supporting hospitals, clinics, healthcare providers, and critical facilities across the UAE and GCC.",
 };
 
 export const companyIntroduction =
@@ -108,7 +108,7 @@ export const about = {
   mission:
     "To deliver high-quality medical products and healthcare solutions from reputable international manufacturers to the UAE market, supporting private and government healthcare sectors with dependable supply, professional representation, product knowledge, documentation support, and practical solutions that improve safety, hygiene, and healthcare readiness.",
   purpose:
-    "Takara Haya was established to connect global medical innovation with the UAE healthcare market. We aim to help international medical manufacturers enter and grow in the UAE while supporting local healthcare providers with trusted products, proper documentation, and dependable supply channels.",
+    "Takara Haya Medical LLC proudly supports the UAE’s ambitious vision to lead the future of healthcare and position Abu Dhabi among the world’s foremost destinations for premium medical services and health tourism. By introducing internationally recognized medical technologies, innovative healthcare solutions, and trusted global brands, we help strengthen the quality, safety, and sustainability of healthcare delivery. Our mission is to empower healthcare providers with products that meet the highest international standards while contributing to Abu Dhabi’s growing reputation as a destination where clinical excellence, innovation, and patient experience converge.",
 };
 
 export const values: Value[] = [
@@ -146,14 +146,12 @@ export const values: Value[] = [
 ];
 
 export const leadershipIntro =
-  "Takara Haya Medical L.L.C. is led by experienced professionals with strong backgrounds in diplomacy, operations, international cooperation, technical regulation, and strategic business development.";
+  "At Takara Haya Medical L.L.C., our leadership combines international experience, strategic vision, and a commitment to excellence to connect leading global healthcare manufacturers with hospitals, clinics, government entities, and critical facilities across the UAE and GCC.";
 
 export const chairmanMessage = [
-  "At Takara Haya Medical L.L.C., our vision is to build a trusted UAE-based medical company that connects international healthcare innovation with the needs of hospitals, clinics, pharmacies, healthcare providers, and critical facilities across the UAE and GCC.",
-  "As a newly established company, we are committed to developing strong partnerships with reputable manufacturers from Japan, Europe, the United States, and other global markets. Our objective is to introduce reliable, high-quality medical products, infection control solutions, PPE, hygiene systems, and healthcare consumables that support safer and more efficient healthcare environments.",
-  "We believe that successful healthcare partnerships are built on trust, quality, compliance, and long-term cooperation. Takara Haya aims to become a reliable local partner for international manufacturers seeking to enter or expand in the UAE market, while supporting healthcare providers with dependable products and professional service.",
-  "Our leadership team brings together experience in diplomacy, international cooperation, healthcare-related regulation, operations, and strategic business development. This foundation allows Takara Haya to approach the medical sector with professionalism, responsibility, and a strong commitment to serving the UAE healthcare market.",
-  "We look forward to building meaningful partnerships and contributing to the continuous development of healthcare supply, safety, and hygiene solutions in the UAE and wider region.",
+  "Under the wise leadership and vision of His Highness Sheikh Mohamed bin Zayed Al Nahyan, President of the UAE and Ruler of Abu Dhabi, Takara Haya Medical L.L.C. is committed to supporting the UAE's continued advancement in healthcare quality, safety, and innovation.",
+  "As a UAE-based medical company, our vision is to serve as a trusted bridge between reputable international manufacturers and healthcare providers across the UAE and GCC. We aim to introduce reliable medical products, infection control solutions, PPE, hygiene systems, and healthcare consumables that meet high standards of quality, compliance, and service.",
+  "Through long-term partnerships built on trust, professionalism, and shared value, Takara Haya seeks to become a dependable local partner for global healthcare companies entering or expanding in the UAE market.",
 ];
 
 export const leadershipProfiles: LeadershipProfile[] = [
@@ -337,7 +335,7 @@ export const zoning = {
 export const zoningAreas: ZoningArea[] = [
   {
     title: "Nurse Stations, Wards, and Restrooms",
-    className: "zone-nurse",
+    image: "/Health_care_zoning/Nurse Station, Ward and Restroom.png",
     products: [
       "Hand wash products",
       "Hand disinfectants",
@@ -351,7 +349,7 @@ export const zoningAreas: ZoningArea[] = [
   },
   {
     title: "Intensive Care Unit",
-    className: "zone-icu",
+    image: "/Health_care_zoning/Intensive Care Unit.png",
     products: [
       "Hand disinfection",
       "Surface disinfection",
@@ -363,7 +361,7 @@ export const zoningAreas: ZoningArea[] = [
   },
   {
     title: "Operating Theatre",
-    className: "zone-theatre",
+    image: "/Health_care_zoning/Operating Theatre.png",
     products: [
       "Hand hygiene",
       "Disinfection products",
@@ -375,7 +373,7 @@ export const zoningAreas: ZoningArea[] = [
   },
   {
     title: "Central Sterile Supply Department",
-    className: "zone-cssd",
+    image: "/Health_care_zoning/Central Sterile Supply Department.png",
     products: [
       "Medical device reprocessing",
       "Instrument cleaning",
@@ -387,7 +385,7 @@ export const zoningAreas: ZoningArea[] = [
   },
   {
     title: "Long-Term Care Facilities",
-    className: "zone-care",
+    image: "/Health_care_zoning/Long-term Care Facility.png",
     products: [
       "Hand hygiene",
       "Resident room hygiene",
@@ -403,8 +401,6 @@ export const zoningAreas: ZoningArea[] = [
 export const criticalFacilities = {
   pageSubheading:
     "Medical and healthcare-related solutions for onsite clinics, staff health, hygiene, PPE, and emergency medical readiness.",
-  positioning:
-    "Takara Haya Medical L.L.C. is a medical company. The company does not present itself as a nuclear technical company, radiation safety company, or industrial engineering company. Takara Haya supports nuclear power plants and other critical facilities only through medical products, healthcare consumables, hygiene solutions, PPE, and onsite medical support supplies.",
   support:
     "In addition to hospitals, clinics, pharmacies, and healthcare facilities, Takara Haya can support critical facilities, including nuclear power plants, by supplying medical and healthcare-related solutions. Our support is focused on onsite clinic needs, staff health, hygiene, infection control, PPE, first-aid products, and emergency medical readiness.",
   solutions: [

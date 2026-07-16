@@ -9,7 +9,7 @@ export function PartnersPage() {
     <>
       <PageHero title="Our International Partners" subtitle={partners.pageSubheading} />
       <section className="section">
-        <div className="container narrow">
+        <div className="container narrow translucent-text-panel">
           <SectionHeader eyebrow="Partnership Overview" title="A UAE platform for selected international manufacturers." />
           <p className="lead-text">{partners.overview}</p>
         </div>

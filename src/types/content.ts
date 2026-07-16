@@ -40,8 +40,8 @@ export type ProductCategory = {
 
 export type ZoningArea = {
   title: string;
+  image: string;
   products: string[];
-  className: string;
 };
 
 export type PartnerRegion = {
