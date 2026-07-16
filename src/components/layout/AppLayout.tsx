@@ -1,3 +1,4 @@
+import { useLayoutEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { SiteHeader } from "../navigation/SiteHeader";
@@ -7,6 +8,10 @@ import { SEOHead } from "../common/SEOHead";
 export function AppLayout() {
   const location = useLocation();
   const reduced = useReducedMotion();
+
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [location.pathname]);
 
   return (
     <>

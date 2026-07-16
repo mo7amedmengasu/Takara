@@ -11,7 +11,13 @@ export function SiteFooter() {
       <div className="footer-arc" aria-hidden="true" />
       <div className="container footer-grid">
         <div className="footer-brand">
-          <img src={company.logo} alt="Takara Haya Medical L.L.C." width="150" height="100" loading="lazy" />
+          <img
+            src="/brand/takara-haya-logo-circle.png"
+            alt="Takara Haya Medical L.L.C."
+            width="150"
+            height="150"
+            loading="lazy"
+          />
           <p>{footer.description}</p>
           <a href={`mailto:${company.email}`}>
             <Mail size={18} aria-hidden="true" />
