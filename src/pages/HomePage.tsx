@@ -149,14 +149,7 @@ export function HomePage() {
             <Button href="/partners">Become a Partner</Button>
           </ScrollReveal>
           <div className="global-map" aria-label="Partnership regions: Japan, Europe, United States, UAE and GCC">
-            <img className="earth-visual" src="/Wallpapers/Earth.png" alt="" width="512" height="512" aria-hidden="true" />
-            <div className="global-hub">
-              <strong>UAE and GCC</strong>
-              <small>Market gateway</small>
-            </div>
-            <span className="region-tag region-europe">Europe</span>
-            <span className="region-tag region-japan">Japan</span>
-            <span className="region-tag region-us">United States</span>
+            <img className="earth-visual" src="/global_scale.jpeg" alt="" width="900" height="640" aria-hidden="true" />
           </div>
         </div>
       </section>

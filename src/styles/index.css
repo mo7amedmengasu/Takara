@@ -984,8 +984,7 @@ p {
   overflow: hidden;
 }
 
-.ecosystem::before,
-.global-map::before {
+.ecosystem::before {
   content: "";
   position: absolute;
   inset: 12%;
@@ -1086,104 +1085,27 @@ p {
   min-height: 430px;
   position: relative;
   border: 1px solid var(--color-border);
-  background:
-    radial-gradient(circle at 50% 52%, rgba(183, 137, 53, 0.14), transparent 13rem),
-    linear-gradient(135deg, rgba(255, 253, 249, 0.88), rgba(238, 229, 216, 0.66));
+  background: rgba(255, 253, 249, 0.62);
   overflow: hidden;
 }
 
 .global-map::before {
-  content: "";
-  position: absolute;
-  left: 14%;
-  right: 14%;
-  top: 50%;
-  height: 1px;
-  border: 0;
-  background: linear-gradient(90deg, transparent, rgba(183, 137, 53, 0.34), transparent);
-  transform: translateY(-50%);
+  display: none;
 }
 
 .global-map::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: min(60%, 360px);
-  aspect-ratio: 1;
-  border: 1px solid rgba(183, 137, 53, 0.16);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  animation: globeHalo 5.8s ease-in-out infinite;
+  display: none;
 }
 
 .earth-visual {
-  position: absolute;
-  left: 50%;
-  top: 48%;
-  z-index: 1;
-  width: min(45%, 250px);
-  aspect-ratio: 1;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
   object-fit: cover;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow:
-    0 0 0 12px rgba(255, 253, 249, 0.7),
-    0 0 0 24px rgba(210, 176, 106, 0.08),
-    0 24px 60px rgba(32, 32, 30, 0.14);
-  animation: earthFloat 6.5s ease-in-out infinite;
+  border-radius: 0;
+  box-shadow: none;
+  animation: none;
 }
-
-.global-hub,
-.region-tag {
-  position: absolute;
-  z-index: 2;
-  background: rgba(255, 253, 249, 0.92);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--color-border);
-  box-shadow: 0 16px 42px rgba(32, 32, 30, 0.08);
-}
-
-.global-hub {
-  left: 50%;
-  bottom: 12%;
-  min-width: 180px;
-  transform: translateX(-50%);
-  display: grid;
-  place-items: center;
-  gap: 0.25rem;
-  padding: 0.9rem 1.05rem;
-  text-align: center;
-}
-
-.global-hub strong,
-.region-tag {
-  font-weight: 900;
-  color: var(--color-charcoal);
-}
-
-.global-hub small {
-  color: var(--color-warm-grey);
-  font-size: 0.78rem;
-}
-
-.region-tag {
-  padding: 0.78rem 1rem;
-}
-
-.region-europe { left: 12%; top: 25%; }
-.region-japan { right: 12%; top: 25%; }
-.region-us { left: 12%; bottom: 21%; }
-
-.region-tag {
-  animation: tagFloat 5.2s ease-in-out infinite;
-}
-
-.region-japan { animation-delay: 0.4s; }
-.region-us { animation-delay: 0.8s; }
 
 .leader-preview {
   display: grid;
@@ -2012,27 +1934,6 @@ p {
   50% { transform: translateY(-8px); }
 }
 
-@keyframes globeHalo {
-  0%, 100% {
-    opacity: 0.55;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.05);
-  }
-}
-
-@keyframes earthFloat {
-  0%, 100% { transform: translate(-50%, -50%) translateY(0) rotate(0deg); }
-  50% { transform: translate(-50%, -50%) translateY(-10px) rotate(2deg); }
-}
-
-@keyframes tagFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-
 @keyframes footerOrbit {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -2232,36 +2133,11 @@ p {
 
   .global-map {
     min-height: auto;
-    display: grid;
-    gap: 0.75rem;
-    padding: 1rem;
-  }
-
-  .global-map::before,
-  .global-map::after {
-    display: none;
+    aspect-ratio: 16 / 11;
   }
 
   .earth-visual {
-    position: static;
-    transform: none;
-    width: min(220px, 68vw);
-    justify-self: center;
-    margin-bottom: 0.5rem;
-    animation: none;
-  }
-
-  .global-hub,
-  .region-tag {
-    position: static;
-    transform: none;
-    width: auto;
-    min-height: auto;
-  }
-
-  .global-hub {
-    justify-items: start;
-    text-align: left;
+    min-height: 100%;
   }
 
   .footer-bottom {
