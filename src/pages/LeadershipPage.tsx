@@ -12,7 +12,7 @@ export function LeadershipPage() {
           <aside className="letter-panel">
             <img
               className="chairman-words-image"
-              src="/chairman_words.jpeg"
+              src="/leaders/chairman.jpeg"
               alt="Chairman leadership artwork"
               width="1280"
               height="853"
