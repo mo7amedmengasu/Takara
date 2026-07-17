@@ -11,7 +11,7 @@ export function NuclearMedicineImagingPage() {
         subtitle="Advanced diagnostic imaging, nuclear medicine, molecular imaging, and related technical support solutions for healthcare providers."
       />
       <section className="section">
-        <div className="container narrow">
+        <div className="container narrow translucent-text-panel">
           <SectionHeader
             eyebrow="Advanced Imaging Solutions"
             title="Supporting clinical diagnosis through trusted imaging and nuclear medicine technologies."

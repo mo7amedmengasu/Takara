@@ -11,7 +11,7 @@ export function MedicalSolutionsPage() {
         subtitle="Healthcare products, medical consumables, PPE, hygiene solutions, and infection control products for healthcare providers in the UAE and GCC."
       />
       <section className="section">
-        <div className="container narrow">
+        <div className="container narrow translucent-text-panel">
           <SectionHeader
             eyebrow="Medical Products & Solutions Introduction"
             title="Focused on quality, reliability, and suitability for healthcare environments."

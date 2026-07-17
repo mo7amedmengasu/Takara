@@ -5,6 +5,9 @@ import { navigationItems } from "../../data/navigation";
 
 export function SiteFooter() {
   const solutionLinks = navigationItems.filter((item) => item.group === "solutions");
+  const scrollPartnersToTop = () => {
+    window.setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
+  };
 
   return (
     <footer className="site-footer">
@@ -47,7 +50,7 @@ export function SiteFooter() {
         <div className="footer-cta">
           <h2>Become a Partner</h2>
           <p>Build long-term opportunities in hospitals, clinics, pharmacies, and healthcare organizations.</p>
-          <Link className="btn btn-dark" to="/partners">
+          <Link className="btn btn-dark" to="/partners" onClick={scrollPartnersToTop}>
             Partner With Takara Haya
           </Link>
         </div>

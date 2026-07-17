@@ -59,23 +59,6 @@ export function PartnersPage() {
           </div>
         </div>
       </section>
-      <section className="section">
-        <div className="container">
-          <SectionHeader eyebrow="Partner Logo Area" title="Reusable partner cards ready for confirmed information." />
-          <div className="partner-placeholder-grid">
-            {[1, 2, 3].map((item) => (
-              <article className="partner-card" key={item}>
-                <div className="partner-logo-placeholder">Logo</div>
-                <h3>Partner information coming soon</h3>
-                <p>Company name, country, product category, short description, and catalogue button will appear here.</p>
-                <button type="button" className="btn btn-secondary" disabled>
-                  Catalogue
-                </button>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 }

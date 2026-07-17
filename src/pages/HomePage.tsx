@@ -68,10 +68,8 @@ export function HomePage() {
           </ScrollReveal>
           <ScrollReveal className="editorial-copy" delay={0.1}>
             <p>{companyIntroduction}</p>
-            <div className="abstract-visual" aria-hidden="true">
-              <span />
-              <span />
-              <span />
+            <div className="care-visual" aria-hidden="true">
+              <img src="/hand-heart-care.svg" alt="" width="1200" height="760" loading="lazy" />
             </div>
           </ScrollReveal>
         </div>

@@ -185,6 +185,26 @@ export const leadershipProfiles: LeadershipProfile[] = [
       "His experience includes regulatory development, emergency management, organizational leadership, business continuity, decision-making, negotiation, and representing organizations in national and international forums.",
     ],
   },
+  {
+    name: "Major General (Ret) Mohamed Shams",
+    role: "Chief Strategic Advisor",
+    image: "/leaders/Major%20general.jpeg",
+    biography: [
+      "Major General Engineer (Ret) Mohamed Shams holds a Bachelor's Degree in Electronics & Communication Engineering.",
+      "He served in the Egyptian Armed Forces for over forty years, with a distinguished career in the Air Defense Forces specializing in missile systems.",
+      "He was appointed to oversee companies and factories across the Suez and South Sinai Governorates. He later served as Deputy Director of the Air Defense College and subsequently as Deputy Commander of Sinai.",
+    ],
+  },
+  {
+    name: "Dr. Atef Saeed Suleiman",
+    role: "General Manager of Takara Haya Egypt Branch",
+    image: "/leaders/General%20Manager%20of%20Takara%20Haya%20Egypt%20Branch.jpeg",
+    biography: [
+      "Atef Saeed Suleiman is a seasoned pharmaceutical executive with over 25 years of experience in Egypt's pharmaceutical sector.",
+      "Since 1999, he has held key leadership roles within the Central Administration of Pharmaceutical Affairs (CAPA), including pharmaceutical factory licensing, government pharmaceutical inspection, scientific office inspection, and pharmaceutical manufacturing oversight.",
+      "He also served as Executive Director of a pharmaceutical raw materials factory at the Arab Organization for Industrialization (AOI).",
+    ],
+  },
 ];
 
 export const partners = {
