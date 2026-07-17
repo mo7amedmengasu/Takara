@@ -41,6 +41,14 @@ export function CriticalFacilitiesPage() {
                 <li key={item}>{item}</li>
               ))}
             </ul>
+            <img
+              className="critical-target-image"
+              src="/Facilities%20with%20onsite%20medical%20needs/Facilities%20with%20onsite%20medical%20needs.jpeg"
+              alt="Facilities with onsite medical needs"
+              width="900"
+              height="480"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>

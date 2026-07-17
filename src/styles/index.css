@@ -1289,6 +1289,16 @@ p {
   margin-top: 0;
 }
 
+.critical-target-image {
+  display: block;
+  width: 100%;
+  max-height: clamp(180px, 18vw, 260px);
+  margin-top: auto;
+  object-fit: cover;
+  border: 1px solid rgba(183, 137, 53, 0.22);
+  box-shadow: 0 16px 36px rgba(32, 32, 30, 0.09);
+}
+
 .letter-layout {
   display: grid;
   grid-template-columns: minmax(380px, 440px) minmax(0, 1fr);

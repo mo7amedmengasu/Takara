@@ -97,7 +97,7 @@ export const about = {
   pageSubheading:
     "A UAE-based medical company built to connect global healthcare manufacturers with the UAE and GCC healthcare markets.",
   paragraphs: [
-    "Takara Haya Medical L.L.C. is a newly established medical company in the United Arab Emirates, created to provide reliable healthcare products, infection control solutions, PPE, hygiene products, and medical consumables through partnerships with reputable international manufacturers.",
+    "Takara Haya Medical L.L.C. is a UAE-based medical company created to provide reliable healthcare products, infection control solutions, PPE, hygiene products, and medical consumables through partnerships with reputable international manufacturers.",
     "The company works with selected medical manufacturers from Japan, Europe, and the United States to introduce high-quality healthcare products to the UAE and GCC markets.",
     "Takara Haya supports private and government healthcare sectors, including hospitals, clinics, pharmacies, medical centers, healthcare groups, and critical facilities requiring medical support.",
     "Our role is not limited to supplying products. We aim to support healthcare providers and international manufacturers through product selection, healthcare zoning, documentation coordination, representation, distribution, and long-term business development.",
@@ -200,7 +200,7 @@ export const leadershipProfiles: LeadershipProfile[] = [
     role: "General Manager of Takara Haya Egypt Branch",
     image: "/leaders/General%20Manager%20of%20Takara%20Haya%20Egypt%20Branch.jpeg",
     biography: [
-      "Atef Saeed Suleiman is a seasoned pharmaceutical executive with over 25 years of experience in Egypt's pharmaceutical sector.",
+      "Dr. Atef Saeed Suleiman is a seasoned pharmaceutical executive with over 25 years of experience in Egypt's pharmaceutical sector.",
       "Since 1999, he has held key leadership roles within the Central Administration of Pharmaceutical Affairs (CAPA), including pharmaceutical factory licensing, government pharmaceutical inspection, scientific office inspection, and pharmaceutical manufacturing oversight.",
       "He also served as Executive Director of a pharmaceutical raw materials factory at the Arab Organization for Industrialization (AOI).",
     ],

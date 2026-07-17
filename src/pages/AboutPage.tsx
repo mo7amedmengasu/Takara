@@ -12,7 +12,7 @@ export function AboutPage() {
         <div className="container editorial-grid">
           <ScrollReveal className="statement-block">
             <p className="eyebrow">About Takara Haya</p>
-            <h2>A newly established UAE medical company with international manufacturer focus.</h2>
+            <h2>A UAE medical company with international manufacturer focus.</h2>
           </ScrollReveal>
           <ScrollReveal className="editorial-copy" delay={0.08}>
             {about.paragraphs.map((paragraph) => (
