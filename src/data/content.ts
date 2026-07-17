@@ -351,11 +351,12 @@ export const diagnosticImagingCategories: ProductCategory[] = [
     image:
       "/Nuclear Medicine & Advanced Diagnostic Imaging Equipment/Nuclear Medicine Solutions.jpeg",
     items: [
-      "Ultrasound and Doppler imaging equipment",
-      "Mammography and women's imaging systems",
-      "Fluoroscopy and interventional imaging solutions",
-      "Imaging workstations, accessories and consumables",
-      "Installation, training and technical support",
+      "Advanced PET/CT and SPECT/CT",
+      "Gamma-camera systems",
+      "Radiopharmaceutical preparation equipment",
+      "Dose-measurement devices and radiation-monitoring systems",
+      "Shielding solutions and specialized software",
+      "Installation, training, maintenance, and technical services across the UAE and GCC",
     ],
     icon: BadgeCheck,
   },
