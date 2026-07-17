@@ -157,20 +157,22 @@ export function HomePage() {
       <section className="section section-warm">
         <div className="container">
           <SectionHeader eyebrow="Leadership Preview" title="Experienced leadership for responsible market development." />
-          <div className="card-grid three">
-            {leadershipProfiles.map((profile) => (
-              <article className="leader-preview" key={profile.name}>
-                <img
-                  className="profile-photo"
-                  src={profile.image}
-                  alt={`${profile.name}, ${profile.role}`}
-                  width="184"
-                  height="184"
-                />
-                <h3>{profile.name}</h3>
-                <p>{profile.role}</p>
-              </article>
-            ))}
+          <div className="leader-preview-scroll" aria-label="Leadership preview list">
+            <div className="card-grid three">
+              {leadershipProfiles.map((profile) => (
+                <article className="leader-preview" key={profile.name}>
+                  <img
+                    className="profile-photo"
+                    src={profile.image}
+                    alt={`${profile.name}, ${profile.role}`}
+                    width="184"
+                    height="184"
+                  />
+                  <h3>{profile.name}</h3>
+                  <p>{profile.role}</p>
+                </article>
+              ))}
+            </div>
           </div>
           <div className="center-action">
             <Button href="/leadership" variant="secondary">

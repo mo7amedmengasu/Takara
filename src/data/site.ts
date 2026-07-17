@@ -42,6 +42,11 @@ export const pageMeta: Record<string, PageMeta> = {
     description:
       "Healthcare products, medical consumables, PPE, hygiene solutions, and infection control products for healthcare providers in the UAE and GCC.",
   },
+  "/nuclear-medicine-imaging": {
+    title: "Nuclear Medicine & Advanced Diagnostic Imaging | Takara Haya Medical",
+    description:
+      "Nuclear medicine, molecular imaging, diagnostic imaging equipment, PET, SPECT, MRI, CT, X-ray, ultrasound, mammography, accessories, training, and technical support solutions.",
+  },
   "/healthcare-zoning": {
     title: "Healthcare Zoning Solutions | Takara Haya Medical",
     description:

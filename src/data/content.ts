@@ -16,7 +16,6 @@ import {
   ShieldCheck,
   Sparkles,
   Stethoscope,
-  Syringe,
   Users,
   Waves,
 } from "lucide-react";
@@ -192,7 +191,7 @@ export const partners = {
   pageSubheading:
     "Takara Haya Medical L.L.C. works with selected international medical manufacturers to bring trusted healthcare products to the UAE and GCC markets.",
   overview:
-    "Takara Haya Medical L.L.C. works with selected international medical manufacturers from Japan, Europe, and the United States to introduce reliable and high-quality healthcare products to the UAE and GCC markets. We aim to build long-term partnerships with manufacturers that provide trusted medical consumables, PPE, hygiene products, infection control solutions, and healthcare technologies.",
+    "Takara Haya Medical L.L.C. collaborates with leading medical manufacturers from Japan, Europe, and the United States to deliver reliable, high-quality healthcare solutions across the UAE and GCC. As the exclusive UAE partner of SARAYA Co., Ltd., Japan, we provide world-class infection control, hygiene, disinfection, PPE, medical consumables, and healthcare solutions while building long-term partnerships with globally trusted manufacturers committed to advancing healthcare excellence.",
   roles: [
     "Product representation",
     "Distribution in the UAE market",
@@ -231,20 +230,8 @@ export const partnerRegions: PartnerRegion[] = [
 
 export const productCategories: ProductCategory[] = [
   {
-    title: "Medical Consumables",
-    items: [
-      "Disposable gloves",
-      "Masks",
-      "Gowns",
-      "Aprons",
-      "Hospital consumables",
-      "Examination products",
-      "Healthcare disposable products",
-    ],
-    icon: Syringe,
-  },
-  {
     title: "Infection Control Products",
+    image: "/medical_solutions/infection_control.jpeg",
     items: [
       "Hand disinfectants",
       "Hand wash products",
@@ -258,6 +245,7 @@ export const productCategories: ProductCategory[] = [
   },
   {
     title: "PPE Products",
+    image: "/medical_solutions/PPE.jpeg",
     items: [
       "Nitrile examination gloves",
       "Surgical masks",
@@ -270,6 +258,7 @@ export const productCategories: ProductCategory[] = [
   },
   {
     title: "Hand Hygiene Solutions",
+    image: "/medical_solutions/Hand%20Hygiene%20Solutions.jpeg",
     items: [
       "Automatic dispensers",
       "Manual dispensers",
@@ -282,6 +271,7 @@ export const productCategories: ProductCategory[] = [
   },
   {
     title: "Surface & Environmental Disinfection",
+    image: "/medical_solutions/Surface & Environmental Disinfection.jpeg",
     items: [
       "Surface cleaning products",
       "Disinfection sprays",
@@ -293,6 +283,7 @@ export const productCategories: ProductCategory[] = [
   },
   {
     title: "Medical Device Reprocessing",
+    image: "/medical_solutions/Medical%20Device%20Reprocessing.jpeg",
     items: [
       "Instrument cleaning products",
       "Pre-cleaning sprays",
@@ -305,6 +296,7 @@ export const productCategories: ProductCategory[] = [
   },
   {
     title: "Pharmacy & Retail Healthcare Products",
+    image: "/medical_solutions/Pharmacy & Retail Healthcare Products.jpeg",
     items: [
       "Healthcare consumables",
       "Hygiene products",
@@ -313,6 +305,39 @@ export const productCategories: ProductCategory[] = [
       "Selected retail healthcare solutions",
     ],
     icon: Pill,
+  },
+];
+
+export const diagnosticImagingCategories: ProductCategory[] = [
+  {
+    title: "Medical Imaging & Diagnostic Solutions",
+    image:
+      "/Nuclear Medicine & Advanced Diagnostic Imaging Equipment/Medical Imaging & Diagnostic Solutions.jpeg",
+    items: [
+      "X-ray systems",
+      "CT scanners",
+      "MRI systems",
+      "Ultrasound equipment",
+      "Mammography systems",
+      "Nuclear medicine and molecular imaging equipment",
+      "PET and SPECT systems",
+      "Imaging accessories and consumables",
+      "Installation, training and technical support",
+    ],
+    icon: Hospital,
+  },
+  {
+    title: "Nuclear Medicine Solutions",
+    image:
+      "/Nuclear Medicine & Advanced Diagnostic Imaging Equipment/Nuclear Medicine Solutions.jpeg",
+    items: [
+      "Ultrasound and Doppler imaging equipment",
+      "Mammography and women's imaging systems",
+      "Fluoroscopy and interventional imaging solutions",
+      "Imaging workstations, accessories and consumables",
+      "Installation, training and technical support",
+    ],
+    icon: BadgeCheck,
   },
 ];
 

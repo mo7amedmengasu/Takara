@@ -11,6 +11,7 @@ import { HomePage } from "./pages/HomePage";
 import { LeadershipPage } from "./pages/LeadershipPage";
 import { MedicalSolutionsPage } from "./pages/MedicalSolutionsPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
+import { NuclearMedicineImagingPage } from "./pages/NuclearMedicineImagingPage";
 import { PartnersPage } from "./pages/PartnersPage";
 import "./styles/index.css";
 
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       { path: "leadership", element: <LeadershipPage /> },
       { path: "partners", element: <PartnersPage /> },
       { path: "medical-solutions", element: <MedicalSolutionsPage /> },
+      { path: "nuclear-medicine-imaging", element: <NuclearMedicineImagingPage /> },
       { path: "healthcare-zoning", element: <HealthcareZoningPage /> },
       { path: "critical-facilities", element: <CriticalFacilitiesPage /> },
       { path: "compliance-quality", element: <ComplianceQualityPage /> },

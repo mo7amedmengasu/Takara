@@ -33,6 +33,7 @@ export type LeadershipProfile = {
 
 export type ProductCategory = {
   title: string;
+  image: string;
   intro?: string;
   items: string[];
   icon: LucideIcon;

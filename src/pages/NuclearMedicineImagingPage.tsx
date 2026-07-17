@@ -1,31 +1,31 @@
 import { Button } from "../components/common/Button";
 import { PageHero } from "../components/common/PageHero";
 import { SectionHeader } from "../components/common/SectionHeader";
-import { productCategories } from "../data/content";
+import { diagnosticImagingCategories } from "../data/content";
 
-export function MedicalSolutionsPage() {
+export function NuclearMedicineImagingPage() {
   return (
     <>
       <PageHero
-        title="Medical Solutions"
-        subtitle="Healthcare products, medical consumables, PPE, hygiene solutions, and infection control products for healthcare providers in the UAE and GCC."
+        title="Nuclear Medicine & Advanced Diagnostic Imaging Equipment"
+        subtitle="Advanced diagnostic imaging, nuclear medicine, molecular imaging, and related technical support solutions for healthcare providers."
       />
       <section className="section">
         <div className="container narrow">
           <SectionHeader
-            eyebrow="Medical Products & Solutions Introduction"
-            title="Focused on quality, reliability, and suitability for healthcare environments."
+            eyebrow="Advanced Imaging Solutions"
+            title="Supporting clinical diagnosis through trusted imaging and nuclear medicine technologies."
           />
           <p className="lead-text">
-            Takara Haya provides medical products and healthcare solutions through selected international manufacturers,
-            focusing on quality, reliability, and suitability for healthcare environments in the UAE and GCC.
+            Takara Haya supports healthcare providers with selected diagnostic imaging equipment, nuclear medicine
+            technologies, accessories, consumables, installation coordination, training, and technical support.
           </p>
         </div>
       </section>
       <section className="section section-warm">
         <div className="container">
           <div className="medical-solution-grid">
-            {productCategories.map((category) => {
+            {diagnosticImagingCategories.map((category) => {
               const Icon = category.icon;
               return (
                 <article className="medical-solution-card" key={category.title}>
@@ -51,13 +51,13 @@ export function MedicalSolutionsPage() {
       </section>
       <section className="closing-cta light">
         <div className="container closing-inner">
-          <h2>Need product details or a quotation?</h2>
+          <h2>Need imaging equipment details?</h2>
           <p>
-            Contact Takara Haya Medical L.L.C. to request product catalogues, specifications, certificates, or quotation
-            details.
+            Contact Takara Haya Medical L.L.C. to discuss diagnostic imaging equipment, nuclear medicine solutions,
+            accessories, consumables, installation, training, or technical support.
           </p>
           <div className="hero-actions">
-            <Button href="/contact">Request Product Catalogue</Button>
+            <Button href="/contact">Request Equipment Details</Button>
             <Button href="/contact" variant="secondary">
               Ask for a Quotation
             </Button>

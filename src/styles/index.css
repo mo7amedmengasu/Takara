@@ -268,7 +268,7 @@ p {
   position: absolute;
   right: 0;
   top: calc(100% + 0.4rem);
-  width: 280px;
+  width: min(380px, calc(100vw - 2rem));
   padding: 0.6rem;
   background: rgba(255, 253, 249, 0.96);
   border: 1px solid var(--color-border);
@@ -289,6 +289,7 @@ p {
 .nav-dropdown-menu a {
   display: flex;
   padding: 0.85rem;
+  overflow-wrap: anywhere;
 }
 
 .menu-button {
@@ -917,8 +918,7 @@ p {
 .scope-notice,
 .contact-panel,
 .contact-inquiry-panel,
-.dev-warning,
-.product-category {
+.dev-warning {
   border: 1px solid var(--color-border);
   background: rgba(255, 253, 249, 0.72);
   box-shadow: var(--shadow-card);
@@ -946,6 +946,29 @@ p {
 .premium-card:hover .card-icon,
 .region-card:hover .card-icon {
   transform: rotate(-4deg) scale(1.08);
+}
+
+.leader-preview-scroll {
+  max-height: clamp(310px, 25vw, 370px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.95rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gold) rgba(255, 253, 249, 0.34);
+}
+
+.leader-preview-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.leader-preview-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 253, 249, 0.34);
+  border-left: 1px solid rgba(140, 103, 39, 0.18);
+}
+
+.leader-preview-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-champagne), var(--color-deep-gold));
+  border: 2px solid rgba(255, 253, 249, 0.62);
 }
 
 .card-icon {
@@ -1391,55 +1414,38 @@ p {
   margin-bottom: 1rem;
 }
 
-.product-layout {
+.medical-solution-grid {
   display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
-  gap: 2rem;
-  align-items: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
 }
 
-.product-layout > *,
-.category-nav,
-.category-nav a {
-  min-width: 0;
-}
-
-.category-nav {
-  position: sticky;
-  top: 110px;
+.medical-solution-card {
   display: grid;
-  gap: 0.45rem;
-  padding: 0.8rem;
-  border: 1px solid var(--color-border);
-  background: rgba(255, 253, 249, 0.8);
+  grid-template-rows: auto 1fr;
+  min-height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(140, 103, 39, 0.18);
+  background: rgba(255, 253, 249, 0.7);
+  box-shadow: 0 18px 52px rgba(32, 32, 30, 0.08);
 }
 
-.category-nav a {
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-  padding: 0.75rem;
-  border-left: 2px solid transparent;
-  color: var(--color-warm-grey);
-  font-weight: 800;
-  overflow-wrap: anywhere;
+.medical-solution-card > img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  background: rgba(255, 253, 249, 0.72);
 }
 
-.category-nav a.active,
-.category-nav a:hover {
-  border-left-color: var(--color-gold);
-  color: var(--color-charcoal);
-  background: rgba(210, 176, 106, 0.12);
-}
-
-.product-sections {
-  display: grid;
-  gap: 1rem;
-}
-
-.product-category {
-  padding: clamp(1.2rem, 2.5vw, 2rem);
-  scroll-margin-top: 120px;
+.medical-solution-body {
+  padding: clamp(1.2rem, 2.4vw, 1.8rem);
+  background:
+    linear-gradient(180deg, rgba(255, 253, 249, 0.84), rgba(255, 253, 249, 0.66)),
+    rgba(255, 253, 249, 0.72);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .category-title {
@@ -1995,13 +2001,11 @@ p {
   .cta-grid,
   .contact-layout,
   .letter-layout,
-  .product-layout,
   .zoning-explorer {
     grid-template-columns: 1fr;
   }
 
   .letter-panel,
-  .category-nav,
   .zone-panel {
     position: static;
   }
@@ -2010,8 +2014,8 @@ p {
     min-height: 0;
   }
 
-  .category-nav {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .medical-solution-grid {
+    grid-template-columns: 1fr;
   }
 
   .ecosystem {
@@ -2126,9 +2130,13 @@ p {
   .journey-list.compact,
   .footer-grid,
   .contact-form,
-  .contact-inquiry-list,
-  .category-nav {
+  .contact-inquiry-list {
     grid-template-columns: 1fr;
+  }
+
+  .leader-preview-scroll {
+    max-height: min(720px, 78vh);
+    padding-right: 0.65rem;
   }
 
   .global-map {
