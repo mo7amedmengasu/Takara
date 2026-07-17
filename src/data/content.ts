@@ -211,7 +211,7 @@ export const partners = {
   pageSubheading:
     "Takara Haya Medical L.L.C. works with selected international medical manufacturers to bring trusted healthcare products to the UAE and GCC markets.",
   overview:
-    "Takara Haya Medical L.L.C. collaborates with leading medical manufacturers from Japan, Europe, and the United States to deliver reliable, high-quality healthcare solutions across the UAE and GCC. As the exclusive UAE partner of SARAYA Co., Ltd., Japan, we provide world-class infection control, hygiene, disinfection, PPE, medical consumables, and healthcare solutions while building long-term partnerships with globally trusted manufacturers committed to advancing healthcare excellence.",
+    "Takara Haya Medical L.L.C. collaborates with leading medical manufacturers from Japan, Europe, and the United States to deliver reliable, high-quality healthcare solutions across the UAE and GCC. As the exclusive UAE representative of SARAYA Co., Ltd., Japan, we provide world-class infection control, hygiene, disinfection, PPE, medical consumables, and healthcare solutions while building long-term partnerships with globally trusted manufacturers committed to advancing healthcare excellence.",
   roles: [
     "Product representation",
     "Distribution in the UAE market",

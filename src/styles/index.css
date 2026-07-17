@@ -1011,11 +1011,12 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
+  width: clamp(210px, 16vw, 260px);
+  min-height: 76px;
   background: var(--color-warm-white);
   border: 1px solid var(--color-border);
   padding: 0.85rem 1rem;
   box-shadow: var(--shadow-card);
-  max-width: 230px;
 }
 
 .ecosystem-core {
@@ -1049,14 +1050,19 @@ p {
 }
 
 .solution-grid {
+  max-width: min(100%, 1180px);
+  margin-inline: auto;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(0.75rem, 1.35vw, 1.25rem);
 }
 
 .solution-card {
-  min-height: 170px;
+  min-height: 0;
+  aspect-ratio: 1 / 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: clamp(0.9rem, 1.65vw, 1.35rem);
 }
 
 .solution-card span,
@@ -2029,6 +2035,8 @@ p {
   .ecosystem-node {
     position: static;
     transform: none;
+    width: 100%;
+    min-height: 76px;
     max-width: none;
     animation: none;
   }
@@ -2136,6 +2144,11 @@ p {
   .leader-preview-scroll {
     max-height: min(720px, 78vh);
     padding-right: 0.65rem;
+  }
+
+  .solution-card {
+    aspect-ratio: auto;
+    min-height: 170px;
   }
 
   .global-map {

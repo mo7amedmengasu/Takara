@@ -7,7 +7,7 @@ export const company = {
   location: "United Arab Emirates",
   logo: "/brand/logo.jpeg",
   description:
-    "Takara Haya Medical L.L.C. is a newly established UAE-based medical company providing healthcare products, infection control solutions, PPE, hygiene products, and medical consumables through selected international manufacturers.",
+    "Takara Haya Medical L.L.C. is a UAE-based medical company providing healthcare products, infection control solutions, PPE, hygiene products, and medical consumables through selected international manufacturers.",
 };
 
 export const footer = {
