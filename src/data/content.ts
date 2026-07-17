@@ -166,7 +166,7 @@ export const leadershipProfiles: LeadershipProfile[] = [
   },
   {
     name: "Eng. Nazim S. Nemer",
-    role: "Vice Chairman",
+    role: "Vice Chairman & Board member",
     image: "/leaders/vice_chairman.jpeg",
     biography: [
       "Eng. Nazim S. Nemer is a senior professional with over 33 years of experience within ADNOC, where he held key roles across maintenance planning, production operations, IT support, information systems, quality management, project management, and cost optimization.",
@@ -176,7 +176,7 @@ export const leadershipProfiles: LeadershipProfile[] = [
   },
   {
     name: "Walid Abdelaziz Elmowafi, PhD",
-    role: "Chief Executive Officer",
+    role: "Chief Executive Officer & Board member",
     image: "/leaders/CEO.jpeg",
     biography: [
       "Dr. Walid Elmowafi is an experienced Nuclear Safeguards Professional, Senior Regulatory Specialist, and International Expert with over 30 years of experience in the nuclear and radiological sectors. He holds a Ph.D. in Nuclear Safeguards and has a strong background in Radiometric Physics.",
